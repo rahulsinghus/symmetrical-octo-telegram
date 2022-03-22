@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{% block title %}Home Page{% endblock %}
+{% block content%}
+{% for result in results %}
+    <h1>{{result.hostname}}</h1>
+{% endfor %}<br>
+<form action="#" method="POST">
+    <p>
+        Hostname:
+        <input type="text" name="hostname" />
+    </p>
+    <p>or</p>
+    <p>
+        Serial Number: 
+        <input type="text" name="serialnum" />
+    </p>
+    <p>
+        <input type="submit" value="Submit"/>
+    </p>
+</form>
+{% endblock %}

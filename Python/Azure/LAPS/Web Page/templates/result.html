@@ -1,0 +1,21 @@
+{% extends "base.html"%}
+{% block title %}Result Page{% endblock %}
+{% block content%}
+<p>Results</p>
+<table class="table">
+<tr>
+    <th>Hostname</th>
+    <th>Account</th>
+    <th>Password</th>
+    <th>PasswordChanged</th>
+</tr>
+{% for result in results %}
+<tr>
+    <th scope="col">{{result.Hostname}}</th>
+    <th scope="col">{{result.Account}}</th>
+    <th scope="col">{{result.Password}}</th>
+    <th scope="col">{{result.PasswordChanged}}</th>
+</tr>
+{% endfor %}
+</table>
+{% endblock %}
