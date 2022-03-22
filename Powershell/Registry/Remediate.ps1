@@ -1,0 +1,1 @@
+New-Item -Path "HKCU:\SOFTWARE\" -Name "DontTouchMe" -Force

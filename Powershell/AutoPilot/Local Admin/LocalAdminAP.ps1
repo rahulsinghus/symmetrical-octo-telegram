@@ -1,0 +1,1 @@
+net localgroup administrators /add "AzureAD\UPN"

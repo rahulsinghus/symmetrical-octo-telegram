@@ -1,0 +1,2 @@
+Get-AppxPackage -allusers Microsoft.WindowsStore | Remove-AppxPackage
+Get-AppXPackage -AllUsers -Name Microsoft.WindowsStore | ForEach-Object {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml" -Verbose}
